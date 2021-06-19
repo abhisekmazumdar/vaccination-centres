@@ -16,10 +16,15 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
+        "drupal/field_permissions": "^1.1",
+        "drupal/jquery_ui_slider": "^1.1",
+        "drupal/pathauto": "^1.8",
+        "drupal/search_api": "^1.19",
         "drush/drush": "^10.5"
     },
     "conflict": {
@@ -64,6 +69,11 @@
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
+        },
+        "patches": {
+            "drupal/token": {
+                "919760: Add a [current-page:object:?] dynamic token": "https://www.drupal.org/files/issues/2021-01-31/token--current_page_object_token--919760--90.patch"
+            }
         },
         "drupal-core-project-message": {
             "include-keys": [
