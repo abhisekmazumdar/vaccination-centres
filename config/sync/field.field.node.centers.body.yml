@@ -1,0 +1,23 @@
+uuid: 6246297e-dbdc-4513-9e69-eecd83cca269
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.centers
+  module:
+    - text
+id: node.centers.body
+field_name: body
+entity_type: node
+bundle: centers
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

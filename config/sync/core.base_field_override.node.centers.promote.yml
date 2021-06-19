@@ -1,0 +1,22 @@
+uuid: 6146c50d-2008-437d-9135-11b049dd7cc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.centers
+id: node.centers.promote
+field_name: promote
+entity_type: node
+bundle: centers
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

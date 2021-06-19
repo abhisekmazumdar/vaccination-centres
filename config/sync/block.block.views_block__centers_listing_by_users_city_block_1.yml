@@ -1,0 +1,30 @@
+uuid: 33bbecf8-2e02-4671-94e5-235670975bca
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.centers_listing_by_users_city
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: views_block__centers_listing_by_users_city_block_1
+theme: olivero
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:centers_listing_by_users_city-block_1'
+settings:
+  id: 'views_block:centers_listing_by_users_city-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

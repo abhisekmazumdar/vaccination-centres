@@ -1,0 +1,33 @@
+uuid: 082241e4-8b97-4079-8b2f-cef505686808
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_cities
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: views_block__search_cities_block_1
+theme: olivero
+region: sidebar
+weight: -8
+provider: null
+plugin: 'views_block:search_cities-block_1'
+settings:
+  id: 'views_block:search_cities-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      centers: centers
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

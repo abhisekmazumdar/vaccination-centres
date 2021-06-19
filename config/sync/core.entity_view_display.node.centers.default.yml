@@ -1,0 +1,59 @@
+uuid: 4615fe7a-42a9-4200-9ce3-75ef43ab31fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.centers.body
+    - field.field.node.centers.field_available_slots
+    - field.field.node.centers.field_center_image
+    - field.field.node.centers.field_city
+    - node.type.centers
+  module:
+    - image
+    - text
+    - user
+id: node.centers.default
+targetEntityType: node
+bundle: centers
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_available_slots:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_center_image:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_city:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

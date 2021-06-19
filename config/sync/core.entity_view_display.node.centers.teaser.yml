@@ -1,0 +1,44 @@
+uuid: a4b0f6da-9b78-44ae-a58e-1bc438c14829
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.centers.body
+    - field.field.node.centers.field_available_slots
+    - field.field.node.centers.field_center_image
+    - field.field.node.centers.field_city
+    - node.type.centers
+  module:
+    - text
+    - user
+id: node.centers.teaser
+targetEntityType: node
+bundle: centers
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_available_slots:
+    type: number_integer
+    weight: 1
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_center_image: true
+  field_city: true

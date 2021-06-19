@@ -1,0 +1,22 @@
+uuid: bdd628d3-ef0a-43d6-a894-539b983f5dde
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: title_for_center
+label: 'Title for Centers'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  460be43e-1b18-493b-a24f-198078dd0a23:
+    id: node_type
+    bundles:
+      centers: centers
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 460be43e-1b18-493b-a24f-198078dd0a23
+selection_logic: and
+weight: -5
+relationships: {  }

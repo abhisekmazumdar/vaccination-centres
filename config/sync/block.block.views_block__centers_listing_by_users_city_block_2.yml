@@ -1,0 +1,33 @@
+uuid: 35251627-5e6b-405d-8c15-8d5c1ffc8d90
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.centers_listing_by_users_city
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: views_block__centers_listing_by_users_city_block_2
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:centers_listing_by_users_city-block_2'
+settings:
+  id: 'views_block:centers_listing_by_users_city-block_2'
+  label: 'Other Center in [current-page:node:field_city]'
+  provider: views
+  label_display: visible
+  views_label: 'Other Center in [current-page:node:field_city]'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      centers: centers
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

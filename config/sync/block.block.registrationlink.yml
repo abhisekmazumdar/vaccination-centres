@@ -1,0 +1,28 @@
+uuid: 3d06e3c6-cc5e-4077-bfce-353961cc8bdb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - vaccination_centers_customization
+  theme:
+    - olivero
+id: registrationlink
+theme: olivero
+region: sidebar
+weight: -9
+provider: null
+plugin: vaccination_centers_customization_registration
+settings:
+  id: vaccination_centers_customization_registration
+  label: 'Registration link'
+  provider: vaccination_centers_customization
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      centers: centers
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

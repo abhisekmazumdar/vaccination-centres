@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_city
+    - field.field.user.user.field_registered_location
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -26,4 +28,7 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_city: true
+  field_registered_location: true
   member_for: true
+  search_api_excerpt: true

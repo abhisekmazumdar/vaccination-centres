@@ -1,0 +1,23 @@
+uuid: 67f22ba5-dd0b-4a3c-92e8-e0b79b2ad4de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_available_slots
+    - node.type.centers
+id: node.centers.field_available_slots
+field_name: field_available_slots
+entity_type: node
+bundle: centers
+label: 'Available Slots'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,10 @@
+uuid: 0f290592-78de-48e4-a2c4-a45258a21ff6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.centers_with_city_teaser_
+label: 'Centers with city(Teaser)'
+targetEntityType: node
+cache: true

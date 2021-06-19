@@ -1,0 +1,11 @@
+vaccination_centers_customization.registration:
+  path: '/vaccination-centers-customization/{node}/registration'
+  defaults:
+    _title: 'Registration Helper'
+    _controller: '\Drupal\vaccination_centers_customization\Controller\VaccinationRegistrationController::build'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      node:
+        type: entity:node
