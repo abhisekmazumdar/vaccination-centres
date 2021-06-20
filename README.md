@@ -16,6 +16,10 @@ If using ddev
 ddev start
 ```
 And import the database from [here](https://github.com/abhisekmazumdar/vaccination-centres/blob/main/database).
+```bash
+ddev composer install
+```
+Unzip, coopy and paste file folder to `web/sites/default` from [here](https://github.com/abhisekmazumdar/vaccination-centres/tree/main/database)
 
 ## Authors
 
